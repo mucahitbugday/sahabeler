@@ -16,6 +16,8 @@ FROM node:18-alpine
 
 WORKDIR /app
 
+
+
 # Node paketi yöneticilerini yükle
 RUN npm install -g pnpm
 
