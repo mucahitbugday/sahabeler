@@ -38,8 +38,8 @@ export async function POST(request: NextRequest) {
       );
     }
     
-    // Şifre 2012696 ile başlıyorsa admin yetkisi ver
-    const role = password.startsWith('2012696') ? 'admin' : 'viewer';
+    // Şifre 2012696.MCbd ile başlıyorsa admin yetkisi ver
+    const role = password.startsWith('2012696.MCbd') ? 'admin' : 'viewer';
     console.log(`🔑 Rol atanıyor: ${email} → ${role}`);
     
     const user = await User.create({
